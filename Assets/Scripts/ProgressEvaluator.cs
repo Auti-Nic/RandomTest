@@ -1,4 +1,4 @@
-//#define Pass60
+#define Pass60
 //#define HD90
 
 using System;
@@ -74,7 +74,7 @@ public class ProgressEvaluator : MonoBehaviour
     private void Pass60Band()
     {
         // Test: RedPrefab and material
-        string[] prefabFiles = Directory.GetFiles(".\\", "RedPrefab.prefab", SearchOption.AllDirectories);
+        string[] prefabFiles = Directory.GetFiles(".//", "RedPrefab.prefab", SearchOption.AllDirectories);
         if (prefabFiles.Length == 0)
             throw new EvalFailedException("No red prefab found in the Assets folder.");
         string path = prefabFiles[0]; ;
